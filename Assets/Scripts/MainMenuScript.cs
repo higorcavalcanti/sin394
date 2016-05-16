@@ -16,11 +16,11 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if (GUI.Button (new Rect (300, 200, 150, 35), botaoPlay, GUIStyle.none)) {
+		if (GUI.Button (new Rect (500, 350, 200, 45), botaoPlay, GUIStyle.none)) {
 			Application.LoadLevel(1);
 		}
 
-		if (GUI.Button (new Rect (300, 250, 150, 35), botaoOpcoes, GUIStyle.none)) {
+		if (GUI.Button (new Rect (500, 400, 200, 45), botaoOpcoes, GUIStyle.none)) {
 			
 		}
 	}
