@@ -24,28 +24,25 @@ public class PlayerScript : MonoBehaviour {
 		animator.SetFloat ("runVerticalBaixo", Mathf.Abs(Input.GetAxis("Vertical")));
 
 		if (Input.GetAxisRaw ("Horizontal") > 0) {
-			transform.Translate ( Vector2.right * playerSpeed * Time.deltaTime);
-			transform.eulerAngles = new Vector2 (0,0);
+			transform.Translate ( Vector3.right * playerSpeed * Time.deltaTime);
+			transform.eulerAngles = new Vector3 (0,0,0);
 		}
 
 		if (Input.GetAxisRaw ("Horizontal") < 0) {
-			transform.Translate ( Vector2.right * playerSpeed * Time.deltaTime);
-			transform.eulerAngles = new Vector2 (0,180);
+			transform.Translate ( Vector3.right * playerSpeed * Time.deltaTime);
+			transform.eulerAngles = new Vector3 (0,180,0);
 		}
 
 		if (Input.GetAxisRaw ("Vertical") > 0) {
-			transform.Translate (Vector2.up * playerSpeed * Time.deltaTime);
+			transform.Translate (Vector3.up * playerSpeed * Time.deltaTime);
 
 
 
 		} else if (Input.GetAxisRaw ("Vertical") < 0) {
-			transform.Translate (Vector2.down * playerSpeed * Time.deltaTime);
+			transform.Translate (Vector3.down * playerSpeed * Time.deltaTime);
 
 
 		}
-
-
-
-		
 	}
+
 }
