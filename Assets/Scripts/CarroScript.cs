@@ -7,7 +7,7 @@ public class CarroScript: MonoBehaviour {
 	public GameObject caminhaoPrefab;// objeto que vai ser lançado na tela
 	public GameObject caminhaoVerdePrefab;
 	public GameObject carroPrefabVerde;
-	public GameObject carroPrefabAzulClaro;
+	public GameObject carroPrefabAzulClaro; // Carro
 	public float rateSpawn;			  // intervalo de spawn
 	public float currentTime;
 	private int posicao;
