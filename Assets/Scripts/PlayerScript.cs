@@ -40,9 +40,12 @@ public class PlayerScript : MonoBehaviour {
 
 		} else if (Input.GetAxisRaw ("Vertical") < 0) {
 			transform.Translate (Vector3.down * playerSpeed * Time.deltaTime);
-
-
 		}
 	}
+
+	/*void OnTriggerEnter2D(Collider2D other) {
+		Debug.Log ("Collision: " + other.name);
+
+	}*/
 
 }
