@@ -7,6 +7,9 @@ public class PlayerScript : MonoBehaviour {
 	public Transform player;
 	private Animator animator;
 
+	void Awaje(){
+		transform.tag = "Player";
+	}
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
