@@ -9,6 +9,8 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject ExplosionPrefab;
 	Renderer rend;
 
+	private OpcoesScript vida;
+
 
 	void Awaje(){
 		transform.tag = "Player";
@@ -49,20 +51,20 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D colisor){
 		if (colisor.gameObject.tag == "Enemy") {
-			/*//vida = GameObject.FindGameObjectsWithTag("Vidas");
+			vida = GameObject.FindGameObjectWithTag("Vidas").GetComponent<OpcoesScript>() as OpcoesScript;
 
 			if(vida.ExcluirVida()){
 				StartCoroutine(DestroyShip());
 			}else{
-				Application.LoadLevel(2);
-			}*/
+				//Application.LoadLevel(2);
+			}
 
-			if(OpcoesScript.vida != 0 ){
+			/*if(OpcoesScript.vida != 0 ){
 				OpcoesScript.vida--;
 			}else{
 				Application.LoadLevel(2);
 			}
-			StartCoroutine(DestroyShip());
+			StartCoroutine(DestroyShip());*/
 		}
 	}
 
