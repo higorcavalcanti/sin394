@@ -8,6 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuScenes.unity
   - enabled: 1
+    path: Assets/Scenes/MenuOpcoes.unity
+  - enabled: 1
+    path: Assets/Scenes/MenuInstrucoesScenes.unity
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
   - enabled: 1
     path: Assets/Scenes/GameOver.unity

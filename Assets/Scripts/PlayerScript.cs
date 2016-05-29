@@ -29,6 +29,7 @@ public class PlayerScript : MonoBehaviour {
 
 	void Movimentar(){
 		animator.SetFloat ("run", Mathf.Abs(Input.GetAxis("Horizontal")));
+		//animator.SetBool ("direita", true);
 		animator.SetFloat ("runVerticalCima",Input.GetAxis("Vertical"));
 		animator.SetFloat ("runVerticalBaixo", Mathf.Abs(Input.GetAxis("Vertical")));
 
