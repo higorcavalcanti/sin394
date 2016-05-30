@@ -29,7 +29,6 @@ public class PlayerScript : MonoBehaviour {
 
 	void Movimentar(){
 		animator.SetFloat ("run", Mathf.Abs(Input.GetAxis("Horizontal")));
-		//animator.SetBool ("direita", true);
 		animator.SetFloat ("runVerticalCima",Input.GetAxis("Vertical"));
 		animator.SetFloat ("runVerticalBaixo", Mathf.Abs(Input.GetAxis("Vertical")));
 
@@ -52,20 +51,21 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D colisor){
 		if (colisor.gameObject.tag == "Enemy") {
-			vida = GameObject.FindGameObjectWithTag("Vidas").GetComponent<OpcoesScript>() as OpcoesScript;
+			/*vida = GameObject.FindGameObjectWithTag("Vidas").GetComponent<OpcoesScript>() as OpcoesScript;
 
 			if(vida.ExcluirVida()){
 				StartCoroutine(DestroyShip());
 			}else{
 				//Application.LoadLevel(2);
 			}
+			*/
 
-			/*if(OpcoesScript.vida != 0 ){
+			if(OpcoesScript.vida >= 1 ){
 				OpcoesScript.vida--;
 			}else{
-				Application.LoadLevel(2);
+				Application.LoadLevel(4);
 			}
-			StartCoroutine(DestroyShip());*/
+			StartCoroutine(DestroyShip());
 		}
 	}
 
