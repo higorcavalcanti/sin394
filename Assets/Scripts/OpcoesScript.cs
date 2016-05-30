@@ -15,7 +15,9 @@ public class OpcoesScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		GetComponent<GUITexture> ().texture =  vidaAtual [0];
+		//GetComponent<GUITexture> ().texture =  vidaAtual [0];
+
+		// Ja tenteni esse tb 
 		vidas = vidaAtual.Length;
 	}
 	
@@ -27,6 +29,7 @@ public class OpcoesScript : MonoBehaviour {
 	void OnGUI(){
 		GUI.Label (new Rect(10.0f,10.0f,105,20), "Pontuaçao: "+ score.ToString());
 		//GUI.Label (new Rect (10.0f, 30.0f, 70, 20), "Vidas: " + vida.ToString ());
+		GUITexture.texture = vidaAtual [0];
 	}
 
 
