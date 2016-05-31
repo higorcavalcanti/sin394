@@ -19,7 +19,11 @@ public class OpcoesScript : MonoBehaviour {
 		if (vida >= VidaCheia) {
 			vida = VidaCheia;
 		} else if (vida <= 0) {
-			//Application.LoadLevel(4);
+			Application.LoadLevel(4);
+		}
+
+		if (score == 200) {
+			Application.LoadLevel(7);
 		}
 	}
 	
