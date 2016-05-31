@@ -53,25 +53,12 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D colisor){
 		if (colisor.gameObject.tag == "Enemy") {
-			/*
-			if(OpcoesScript.vida > 0  ){
+
+			 if(OpcoesScript.vida > 0  ){
 				OpcoesScript.vida--;
 				StartCoroutine(DestroyShip());
-			}else{
+			}else
 				Application.LoadLevel(4);
-				OpcoesScript.vida = 2;
-				OpcoesScript.score = 0;
-			}*/
-
-			if(OpcoesScript.vida > 0  ){
-				OpcoesScript.vida--;
-				StartCoroutine(DestroyShip());
-			}else{
-				Application.LoadLevel(4);
-				OpcoesScript.vida = 2;
-				OpcoesScript.score = 0;
-			}
-
 
 		}
 	}
