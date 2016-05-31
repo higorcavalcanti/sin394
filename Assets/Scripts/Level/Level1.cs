@@ -28,7 +28,7 @@ public class Level1 : MonoBehaviour {
 	void spawnEnemy() {
 		lastSpawn = timeToSpawn;
 
-		Vector3 pos = new Vector3 (0, 0, 0);
+		Vector3 pos = new Vector3 (38, 2, 0);
 		Instantiate (enemyPrefab, pos, Quaternion.identity);
 	}
 
