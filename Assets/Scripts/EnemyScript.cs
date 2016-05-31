@@ -18,7 +18,6 @@ public class EnemyScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		GameObject go = GameObject.FindGameObjectWithTag ("Player");
-		
 		target = go.transform;
 		
 		maxDistance = 1;
@@ -44,4 +43,6 @@ public class EnemyScript : MonoBehaviour {
 			transform.eulerAngles = new Vector3 (0,0,0);
 		}
 	}
+
+
 }

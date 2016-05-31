@@ -9,6 +9,8 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject ExplosionPrefab;
 	Renderer rend;
 
+	//private OpcoesScript vida;
+
 	private OpcoesScript vida;
 
 
@@ -51,21 +53,26 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D colisor){
 		if (colisor.gameObject.tag == "Enemy") {
-			/*vida = GameObject.FindGameObjectWithTag("Vidas").GetComponent<OpcoesScript>() as OpcoesScript;
-
-			if(vida.ExcluirVida()){
+			/*
+			if(OpcoesScript.vida > 0  ){
+				OpcoesScript.vida--;
 				StartCoroutine(DestroyShip());
 			}else{
-				//Application.LoadLevel(2);
-			}
-			*/
+				Application.LoadLevel(4);
+				OpcoesScript.vida = 2;
+				OpcoesScript.score = 0;
+			}*/
 
-			if(OpcoesScript.vida >= 1 ){
+			if(OpcoesScript.vida > 0  ){
 				OpcoesScript.vida--;
+				StartCoroutine(DestroyShip());
 			}else{
 				Application.LoadLevel(4);
+				OpcoesScript.vida = 2;
+				OpcoesScript.score = 0;
 			}
-			StartCoroutine(DestroyShip());
+
+
 		}
 	}
 
@@ -77,19 +84,4 @@ public class PlayerScript : MonoBehaviour {
 		rend.enabled = true;
 
 	}
-
-
-
-
-
-
-
-
-
-
-	/*void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log ("Collision: " + other.name);
-
-	}*/
-
 }
