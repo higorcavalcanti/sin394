@@ -19,11 +19,11 @@ public class OpcoesScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (temperatura >= maxTemperatura) {
-			Application.LoadLevel(4);
+			Application.LoadLevel(5);
 		}
 		
 		if (score == 200) {
-			Application.LoadLevel(7);
+			Application.LoadLevel(6);
 		}
 	}
 	

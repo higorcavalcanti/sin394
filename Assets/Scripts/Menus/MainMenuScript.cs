@@ -20,8 +20,6 @@ public class MainMenuScript : MonoBehaviour {
 	void OnGUI(){
 		if (GUI.Button (new Rect (500, 350, 200, 45), botaoPlay, GUIStyle.none)) {
 			Application.LoadLevel(3);
-
-			//Application.LoadLevel(8);
 		}
 
 		if (GUI.Button (new Rect (740, 350, 198, 45), botaoOpcoes, GUIStyle.none)) {
@@ -30,7 +28,7 @@ public class MainMenuScript : MonoBehaviour {
 		}
 
 		if (GUI.Button (new Rect (500, 410, 198, 45),botaoCreditos , GUIStyle.none)) {
-			Application.LoadLevel(6);
+			Application.LoadLevel(4);
 			
 		}
 

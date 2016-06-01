@@ -55,7 +55,11 @@ public class PlayerScript : MonoBehaviour {
 			OpcoesScript.temperatura++;
 			StartCoroutine(DestroyShip());
 		}
-			//Application.LoadLevel(4);
+			
+		//Gambiarra! Arrumar
+		if (colisor.gameObject.tag == "startFase1Tag") {
+			Application.LoadLevel(7);
+		}
 
 	}
 

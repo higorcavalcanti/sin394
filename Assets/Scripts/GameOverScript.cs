@@ -4,6 +4,8 @@ using System.Collections;
 public class GameOverScript : MonoBehaviour {
 
 	public Texture botaoJogar;
+	private bool set;
+	private OpcoesScript score;
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +14,9 @@ public class GameOverScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(set = true){
+			OpcoesScript.score = 0;
+		}
 	}
 
 	
@@ -26,7 +30,8 @@ public class GameOverScript : MonoBehaviour {
 		GUI.Label (new Rect(425,389,200,40), OpcoesScript.score.ToString(),style);
 
 		if (GUI.Button (new Rect (355, 450, 289, 56), botaoJogar, GUIStyle.none)) {
-			Application.LoadLevel(3);
+			set = true;
+			Application.LoadLevel(7);
 			
 		}
 	}

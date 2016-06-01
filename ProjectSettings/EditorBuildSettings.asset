@@ -12,14 +12,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuInstrucoesScenes.unity
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-  - enabled: 1
-    path: Assets/Scenes/MenuFasesScenes.unity
+    path: Assets/Scenes/MapaJogo.unity
   - enabled: 1
     path: Assets/Scenes/MenuCreditos.unity
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+  - enabled: 1
     path: Assets/Scenes/Winner.unity
   - enabled: 1
-    path: Assets/Scenes/MapaJogo.unity
+    path: Assets/Scenes/Level1.unity
