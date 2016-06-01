@@ -9,9 +9,7 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject ExplosionPrefab;
 	Renderer rend;
 
-	//private OpcoesScript vida;
-
-	private OpcoesScript vida;
+	private OpcoesScript temperatura;
 
 
 	void Awaje(){
@@ -53,14 +51,12 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D colisor){
 		if (colisor.gameObject.tag == "Enemy") {
-
-			 if(OpcoesScript.vida > 0  ){
-				OpcoesScript.vida--;
-				StartCoroutine(DestroyShip());
-			}else
-				Application.LoadLevel(4);
-
+			
+			OpcoesScript.temperatura++;
+			StartCoroutine(DestroyShip());
 		}
+			//Application.LoadLevel(4);
+
 	}
 
 	IEnumerator DestroyShip(){
@@ -69,6 +65,5 @@ public class PlayerScript : MonoBehaviour {
 		transform.position = new Vector3 (-19.68f,-13.03f,0);
 		yield return new WaitForSeconds (1.5f);
 		rend.enabled = true;
-
 	}
 }

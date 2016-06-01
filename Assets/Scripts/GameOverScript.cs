@@ -4,7 +4,6 @@ using System.Collections;
 public class GameOverScript : MonoBehaviour {
 
 	public Texture botaoJogar;
-	private bool teste;
 
 	// Use this for initialization
 	void Start () {

@@ -1354,7 +1354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Temperatura: {fileID: 2800000, guid: ddbc751bebcf1084bbe6961236f87803, type: 3}
   Contorno: {fileID: 2800000, guid: ebb1d522d5da12041a7375f7ba58709a, type: 3}
-  VidaCheia: 2
 --- !u!1 &674361261
 GameObject:
   m_ObjectHideFlags: 0
