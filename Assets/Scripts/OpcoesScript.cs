@@ -23,7 +23,8 @@ public class OpcoesScript : MonoBehaviour {
 		}
 		
 		if (score == 200) {
-			Application.LoadLevel(6);
+			//Application.LoadLevel(6); 	// Tela de Winner
+			Application.LoadLevel(9);
 		}
 	}
 	
