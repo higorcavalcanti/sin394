@@ -1,0 +1,43 @@
+Initialize engine version: 5.1.0f3 (ec70b008569d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.105 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Daniel\Documents\Unity\SIN394\Executavel\Jogo_Data\Managed\System.dll (this message is harmless)
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.407535 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 284.
+Total: 0.286087 ms (FindLiveObjects: 0.034210 ms CreateObjectMapping: 0.024802 ms MarkObjects: 0.194146 ms  DeleteObjects: 0.022237 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.533688 ms
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 185.
+Total: 0.295495 ms (FindLiveObjects: 0.017533 ms CreateObjectMapping: 0.010263 ms MarkObjects: 0.149244 ms  DeleteObjects: 0.117171 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)

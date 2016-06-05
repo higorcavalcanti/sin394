@@ -18,11 +18,9 @@ public class WinnerScript : MonoBehaviour {
 		}
 	
 	}
-
-	
 	void OnGUI(){
 
-		if (GUI.Button (new Rect (390, 470, 283, 50), botaoContinuar, GUIStyle.none)) {
+		if (GUI.Button (new Rect (Screen.width /2.8f, Screen.height / 1.3f, Screen.width / 4.5f, Screen.height / 6.5f), botaoContinuar, GUIStyle.none)) {
 			set = true;
 			Application.LoadLevel(3);
 		}

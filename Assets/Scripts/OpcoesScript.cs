@@ -27,9 +27,8 @@ public class OpcoesScript : MonoBehaviour {
 			Application.LoadLevel(9);
 		}
 	}
-	
 	void OnGUI(){
-		GUI.Label (new Rect(10.0f,50.0f,105,20), "Pontuaçao: "+ score.ToString());
+		GUI.Label (new Rect(Screen.width / 100, Screen.height / 13, Screen.width / 6, Screen.height / 12), "Pontuaçao: "+ score.ToString());
 		GUI.DrawTexture (new Rect (Screen.width / 40, Screen.height / 25, Screen.width / 8.3f/maxTemperatura*temperatura, Screen.height / 48), Temperatura);
 		GUI.DrawTexture (new Rect (Screen.width / 100, Screen.height / 100, Screen.width / 6, Screen.height / 12), Contorno);
 	}
