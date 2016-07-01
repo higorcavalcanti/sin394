@@ -7,6 +7,7 @@ public class PlayerScript2 : MonoBehaviour {
 	public float speed;
 	private Animator animator;
 	public GameObject ExplosionPrefab;
+	public GameObject EletricidadePrefab;
 	Renderer rend;
 	
 	private OpcoesScript temperatura;
@@ -27,14 +28,11 @@ public class PlayerScript2 : MonoBehaviour {
 		float horizontal = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
 		player.transform.Translate (horizontal, 0, 0);
 
-		/*
-		if(player.transform.position.y > maxHeigth){
-			player.transform.position = new Vector2(0, maxHeigth);
+		//Tiro
+		if (Input.GetKeyDown ("space")) {
+			Vector3 position = new Vector3(transform.position.x,transform.position.y + (transform.localScale.y/2));
+			Instantiate(EletricidadePrefab,position, Quaternion.identity);
 		}
-
-		if(player.transform.position.y < minHeigth){
-			player.transform.position = new Vector2(0,minHeigth);
-		}*/
 	}
 
 	void OnCollisionEnter2D(Collision2D colisor){
