@@ -14,6 +14,7 @@ public class OpcoesScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		temperatura = minTemperatura;
+		score = 0;
 	}
 	
 	// Update is called once per frame

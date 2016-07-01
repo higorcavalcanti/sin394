@@ -15,8 +15,11 @@ public class PreLevel1Script : MonoBehaviour {
 
 	void OnGUI(){
 		
-		if (Input.anyKey) {
+		/*if (Input.anyKey) {
 			Application.LoadLevel(7);
-		}
+		}*/
+
+		if(Input.GetKeyDown("space"))
+			Application.LoadLevel(7);
 	}
 }

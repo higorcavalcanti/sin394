@@ -14,9 +14,6 @@ public class GameOverScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(set = true){
-			OpcoesScript.score = 0;
-		}
 	}
 
 	
