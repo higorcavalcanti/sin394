@@ -59,7 +59,7 @@ public class PlayerScript2 : MonoBehaviour {
 
 	void OnTriggerEnter(Collider otherObject){
 		if (otherObject.tag == "enemy") {
-			OpcoesScript.temperatura++;
+			OpcoesScript2.temperatura++;
 			EnemyScript2 enemyScript2 = (EnemyScript2) otherObject.gameObject.GetComponent("EnemyScript2");
 			enemyScript2.setPosition();
 			StartCoroutine(DestroyShip());

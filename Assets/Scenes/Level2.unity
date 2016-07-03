@@ -194,8 +194,9 @@ GameObject:
   - 4: {fileID: 348134336}
   - 212: {fileID: 348134335}
   - 95: {fileID: 348134334}
-  - 50: {fileID: 348134338}
   - 114: {fileID: 348134339}
+  - 136: {fileID: 348134338}
+  - 54: {fileID: 348134337}
   m_Layer: 0
   m_Name: bonec
   m_TagString: Untagged
@@ -258,22 +259,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 674061833}
   m_RootOrder: 0
---- !u!50 &348134338
-Rigidbody2D:
-  serializedVersion: 2
+--- !u!54 &348134337
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 348134333}
+  serializedVersion: 2
   m_Mass: 1
-  m_LinearDrag: 0
+  m_Drag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 0
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
   m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &348134338
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348134333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.96500003
+  m_Height: 4.17999983
+  m_Direction: 1
+  m_Center: {x: 0, y: -5.96046448e-08, z: 0}
 --- !u!114 &348134339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,7 +625,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493337607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08308c91a7e511f4a8af822412e5c221, type: 3}
+  m_Script: {fileID: 11500000, guid: fc79a72ee685e7f47ab19efd055238ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Temperatura: {fileID: 2800000, guid: ddbc751bebcf1084bbe6961236f87803, type: 3}

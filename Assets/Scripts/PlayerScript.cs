@@ -60,7 +60,7 @@ public class PlayerScript : MonoBehaviour {
 		if (colisor.gameObject.tag == "startFase1Tag") {
 			Application.LoadLevel (8);
 		} else if (colisor.gameObject.tag == "startFase2Tag") {
-			Application.LoadLevel (10);
+			Application.LoadLevel (14);
 		}
 
 	}

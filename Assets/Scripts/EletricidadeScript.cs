@@ -26,11 +26,8 @@ public class EletricidadeScript : MonoBehaviour {
 
 	void OnTriggerEnter(Collider otherObject){
 		if (otherObject.tag == "enemy") {
-			OpcoesScript.score = OpcoesScript.score+10;
-			
-			if(OpcoesScript.score>=200){
-				//Application.LoadLevel(2);
-			}
+			OpcoesScript2.score = OpcoesScript2.score+10;
+
 			
 			EnemyScript2 enemyScript2 = (EnemyScript2) otherObject.gameObject.GetComponent("EnemyScript2");
 			Instantiate(ExplosionPrefab,enemyScript2.transform.position, enemyScript2.transform.rotation);
