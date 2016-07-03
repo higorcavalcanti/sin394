@@ -24,20 +24,20 @@ public class EletricidadeScript : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter2D(Collision2D colisor){
-		if (colisor.gameObject.tag == "Enemy") {
-
-			StartCoroutine(DestroyShip());
+	void OnTriggerEnter(Collider otherObject){
+		if (otherObject.tag == "enemy") {
+			OpcoesScript.score = OpcoesScript.score+10;
+			
+			if(OpcoesScript.score>=100){
+				Application.LoadLevel(2);
+			}
+			
+			EnemyScript2 enemyScript2 = (EnemyScript2) otherObject.gameObject.GetComponent("EnemyScript2");
+			Instantiate(ExplosionPrefab,enemyScript2.transform.position, enemyScript2.transform.rotation);
+			enemyScript2.setPosition();
+			Destroy(gameObject);
+			
+			
 		}
-
-		
-	}
-	
-	IEnumerator DestroyShip(){
-		Instantiate(ExplosionPrefab,transform.position,transform.rotation);
-		rend.enabled = false;
-		transform.position = new Vector3 (-19.68f,-13.03f,0);
-		yield return new WaitForSeconds (1.5f);
-		rend.enabled = true;
 	}
 }

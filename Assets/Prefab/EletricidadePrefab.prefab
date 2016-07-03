@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 455170}
   - 33: {fileID: 3351738}
-  - 136: {fileID: 13682654}
   - 23: {fileID: 2365856}
-  - 54: {fileID: 5414778}
   - 114: {fileID: 11462622}
+  - 136: {fileID: 13632356}
+  - 54: {fileID: 5431788}
   m_Layer: 0
   m_Name: EletricidadePrefab
   m_TagString: Untagged
@@ -26,7 +26,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146280}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalRotation: {x: -5.18567731e-07, y: -.0871558934, z: -.99619472, w: 4.53688749e-08}
   m_LocalPosition: {x: 2.69499993, y: 1.00300002, z: 0}
   m_LocalScale: {x: .230943769, y: .245386645, z: .38500005}
   m_Children: []
@@ -63,14 +63,14 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146280}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5414778
+--- !u!54 &5431788
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146280}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eletricidadeSpeed: 10
-  ExplosionPrefab: {fileID: 0}
---- !u!136 &13682654
+  ExplosionPrefab: {fileID: 158834, guid: bdfdb2987fa2ca34c9c51995b78133a2, type: 2}
+--- !u!136 &13632356
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -101,9 +101,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .5
-  m_Height: 2
+  m_Height: 1.99999964
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 4.76837158e-07, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -118,6 +118,42 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.z
+      value: -.99619472
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.w
+      value: 4.53688749e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.y
+      value: -.0871558934
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.x
+      value: -5.18567731e-07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

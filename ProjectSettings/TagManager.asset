@@ -8,6 +8,7 @@ TagManager:
   - Vidas
   - Lixo
   - startFase1Tag
+  - enemy
   layers:
   - Default
   - TransparentFX

@@ -28,7 +28,7 @@ public class EnemyScript2 : MonoBehaviour {
 		}
 	}
 
-	void setPosition(){
+	public void setPosition(){
 		currentSpeed = Random.Range (minSpeed, maxSpeed);
 		x = 18.52f;
 		y = Random.Range (-0.63f,0.20f);

@@ -33,27 +33,37 @@ public class PlayerScript2 : MonoBehaviour {
 			Vector3 position = new Vector3(transform.position.x,transform.position.y + (transform.localScale.y/2));
 			Instantiate(EletricidadePrefab,position, Quaternion.identity);
 		}
+
+		//Lado direito e esquedo
+		if (transform.position.x <=1.5f)
+			transform.position = new Vector3(1.5f,transform.position.y,transform.position.z);
+		
+		else if (transform.position.x >=15.0f)
+			transform.position = new Vector3(15.0f,transform.position.y,transform.position.z);
+
+		if (transform.position.y <=-1.0f)
+			transform.position = new Vector3(transform.position.x, -1.0f,transform.position.z);
+		
+		else if (transform.position.y >=2.0f)
+			transform.position = new Vector3(transform.position.x, 2.0f,transform.position.z);
+
+
 	}
 
-	void OnCollisionEnter2D(Collision2D colisor){
-		if (colisor.gameObject.tag == "Enemy") {
-			
+	void OnTriggerEnter(Collider otherObject){
+		if (otherObject.tag == "enemy") {
 			OpcoesScript.temperatura++;
+			EnemyScript2 enemyScript2 = (EnemyScript2) otherObject.gameObject.GetComponent("EnemyScript2");
+			enemyScript2.setPosition();
 			StartCoroutine(DestroyShip());
 		}
-		
-		//Gambiarra! Arrumar
-		if (colisor.gameObject.tag == "startFase1Tag") {
-			Application.LoadLevel(8);
-		}
-		
 	}
 	
 	IEnumerator DestroyShip(){
 		Instantiate(ExplosionPrefab,transform.position,transform.rotation);
 		rend.enabled = false;
-		transform.position = new Vector3 (2.0f,0.2f,0);
-		yield return new WaitForSeconds (1.5f);
+		transform.position = new Vector3 (0, 0, transform.position.z);
+		yield return new WaitForSeconds(1.5f);
 		rend.enabled = true;
 	}
 }
