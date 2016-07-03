@@ -9,6 +9,7 @@ public class PlayerScript2 : MonoBehaviour {
 	public GameObject ExplosionPrefab;
 	public GameObject EletricidadePrefab;
 	Renderer rend;
+	private float cronometro;
 	
 	private OpcoesScript temperatura;
 
@@ -16,12 +17,15 @@ public class PlayerScript2 : MonoBehaviour {
 	void Start () {
 		animator = GetComponent<Animator> ();
 		rend = GetComponent<Renderer> ();
+		cronometro = 1;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+		cronometro += Time.deltaTime;
+
 		float vertical = Input.GetAxis ("Vertical") * speed * Time.deltaTime;
 		player.transform.Translate (0, vertical, 0);
 
@@ -31,7 +35,10 @@ public class PlayerScript2 : MonoBehaviour {
 		//Tiro
 		if (Input.GetKeyDown ("space")) {
 			Vector3 position = new Vector3(transform.position.x,transform.position.y + (transform.localScale.y/2));
-			Instantiate(EletricidadePrefab,position, Quaternion.identity);
+			if(cronometro >= 1){
+				Instantiate(EletricidadePrefab,position, Quaternion.identity);
+				cronometro = 0;
+			}
 		}
 
 		//Lado direito e esquedo

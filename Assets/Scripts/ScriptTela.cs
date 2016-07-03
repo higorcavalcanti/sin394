@@ -13,9 +13,14 @@ public class ScriptTela : MonoBehaviour {
 	void Update () {
 		float amtToMove = speed * Time.deltaTime;
 		transform.Translate (Vector3.left * amtToMove, Space.World);
-		if(transform.position.x <= 3.7f)
+		/*if(transform.position.x <= 3.7f)
 		{
 			transform.position = new Vector3(10.7f, 4.4f, transform.position.z);
+		}*/
+
+		if(transform.position.x <= -9.6f)
+		{
+			transform.position = new Vector3(9.7f, 4.4f, transform.position.z);
 		}
 
 	}

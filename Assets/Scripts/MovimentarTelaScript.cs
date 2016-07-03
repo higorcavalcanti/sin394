@@ -3,23 +3,26 @@ using System.Collections;
 
 public class MovimentarTelaScript : MonoBehaviour {
 
-	private Material currentMaterial;
-	public float speead;
-	private float offset;
+	public float speed;
 
 	// Use this for initialization
 	void Start () {
-
-		//currentMaterial = renderer.material;
-		currentMaterial = GetComponent<Renderer> ().material;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		offset += 0.001f;
-		currentMaterial.SetTextureOffset ("_MainTex", new Vector2 (offset * speead, 0));
+		float amtToMove = speed * Time.deltaTime;
+		transform.Translate (Vector3.left * amtToMove, Space.World);
+		/*if(transform.position.x <= 3.7f)
+		{
+			transform.position = new Vector3(10.7f, 4.4f, transform.position.z);
+		}*/
+		
+		if(transform.position.x <= 7.7f)
+		{
+			transform.position = new Vector3(26.7f, 4.49f, 1.33169f);
+		}
 	
 	}
 }

@@ -9,6 +9,7 @@ TagManager:
   - Lixo
   - startFase1Tag
   - enemy
+  - startFase2Tag
   layers:
   - Default
   - TransparentFX

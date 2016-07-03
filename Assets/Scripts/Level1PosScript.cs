@@ -20,6 +20,6 @@ public class Level1PosScript : MonoBehaviour {
 		}*/
 
 		if(Input.GetKeyDown("space"))
-			Application.LoadLevel(7);
+			Application.LoadLevel(6);
 	}
 }

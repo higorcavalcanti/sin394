@@ -58,7 +58,9 @@ public class PlayerScript : MonoBehaviour {
 		
 		//Gambiarra! Arrumar
 		if (colisor.gameObject.tag == "startFase1Tag") {
-			Application.LoadLevel(8);
+			Application.LoadLevel (8);
+		} else if (colisor.gameObject.tag == "startFase2Tag") {
+			Application.LoadLevel (10);
 		}
 
 	}
