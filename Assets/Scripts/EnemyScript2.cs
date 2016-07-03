@@ -31,7 +31,7 @@ public class EnemyScript2 : MonoBehaviour {
 	public void setPosition(){
 		currentSpeed = Random.Range (minSpeed, maxSpeed);
 		x = 18.52f;
-		y = Random.Range (-0.63f,0.20f);
+		y = Random.Range (-1.16f,1.24f);
 		z = 0.0f;
 		transform.position = new Vector3 (x, y, z);
 	}

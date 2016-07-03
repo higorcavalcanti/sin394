@@ -28,8 +28,8 @@ public class EletricidadeScript : MonoBehaviour {
 		if (otherObject.tag == "enemy") {
 			OpcoesScript.score = OpcoesScript.score+10;
 			
-			if(OpcoesScript.score>=100){
-				Application.LoadLevel(2);
+			if(OpcoesScript.score>=200){
+				//Application.LoadLevel(2);
 			}
 			
 			EnemyScript2 enemyScript2 = (EnemyScript2) otherObject.gameObject.GetComponent("EnemyScript2");
