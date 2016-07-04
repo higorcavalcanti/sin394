@@ -23,13 +23,6 @@ public class MoveScript2 : MonoBehaviour {
 		
 	}
 	
-	void OnTriggerEnter(Collider otherObject){
-		if (otherObject.tag == "Player") {
-			Destroy(gameObject);
-			OpcoesScript2.score = OpcoesScript2.score+10;
-			OpcoesScript2.recolhido = OpcoesScript2.recolhido+10;
-		}
-	}
 
 
 }

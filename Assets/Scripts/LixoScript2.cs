@@ -52,5 +52,4 @@ public class LixoScript2 : MonoBehaviour {
 	}
 
 
-
 }

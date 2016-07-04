@@ -186,6 +186,10 @@ Prefab:
       propertyPath: Lixo4Prefab
       value: 
       objectReference: {fileID: 180130, guid: 9dbe5b82c53f69b4b9ba7627289c2083, type: 2}
+    - target: {fileID: 175818, guid: acfd87eea42f776429846edc1e401013, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acfd87eea42f776429846edc1e401013, type: 2}
   m_IsPrefabParent: 0
@@ -489,7 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b42e136d79a274fa9f04df75480383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.20000005
+  speed: 3
 --- !u!1 &463578050
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17798d263d0dbcf469a9c49a22016bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.20000005
+  speed: 3
 --- !u!23 &463578052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -800,13 +804,15 @@ GameObject:
   - 23: {fileID: 1678045289}
   - 114: {fileID: 1678045288}
   - 82: {fileID: 1678045287}
+  - 114: {fileID: 1678045291}
+  - 61: {fileID: 1678045292}
   m_Layer: 0
   m_Name: Lixos
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1678045287
 AudioSource:
   m_ObjectHideFlags: 0
@@ -933,6 +939,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1678045291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678045286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4970f01271048924fa0fb13bf7dafc72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1678045292
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678045286}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1726693399
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d572538447b301f48a9a6a7b4296ac1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 4
+  minSpeed: 3
   maxSpeed: 6
   currentSpeed: 0
 --- !u!212 &1726693402
