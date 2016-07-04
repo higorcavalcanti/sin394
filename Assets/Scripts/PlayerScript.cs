@@ -20,6 +20,9 @@ public class PlayerScript : MonoBehaviour {
 		animator = GetComponent<Animator> ();
 		rend = GetComponent<Renderer> ();
 	
+		if (MapaJogoScript.level == 2) {
+			transform.position = new Vector3(-16.0f, 4.0f, transform.position.z);
+		}
 	}
 
 	// Update is called once per frame

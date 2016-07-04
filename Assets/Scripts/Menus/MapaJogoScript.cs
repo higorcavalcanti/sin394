@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MapaJogoScript : MonoBehaviour {
 
+	public static int level = 1;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -11,6 +13,4 @@ public class MapaJogoScript : MonoBehaviour {
 	void Update () {
 
 	}
-
-
 }

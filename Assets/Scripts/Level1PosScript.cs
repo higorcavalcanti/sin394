@@ -19,7 +19,9 @@ public class Level1PosScript : MonoBehaviour {
 			Application.LoadLevel(6);
 		}*/
 
-		if(Input.GetKeyDown("space"))
-			Application.LoadLevel(6);
+		if (Input.GetKeyDown ("space")) {
+			Application.LoadLevel (6);
+			MapaJogoScript.level = 2;
+		}
 	}
 }

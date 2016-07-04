@@ -19,7 +19,9 @@ public class PreLevel2Script : MonoBehaviour {
 			Application.LoadLevel(7);
 		}*/
 		
-		if(Input.GetKeyDown("space"))
-			Application.LoadLevel(10);
+		if (Input.GetKeyDown ("space")) {
+			Application.LoadLevel (10);
+			MapaJogoScript.level = 2;
+		}
 	}
 }
