@@ -11,6 +11,7 @@ public class OpcoesScript2 : MonoBehaviour {
 	
 	public static int maxTemperatura = 3;
 	public static int minTemperatura = 0;
+	public GUIStyle customButton;
 	
 	// Use this for initialization
 	void Start () {
@@ -24,13 +25,13 @@ public class OpcoesScript2 : MonoBehaviour {
 			Application.LoadLevel(11);
 		}
 		
-		if (score == 100) {
+		if (score == 300) {
 			//Application.LoadLevel(12); 	// Tela de Winner
 			Application.LoadLevel(13);
 		}
 	}
 	void OnGUI(){
-		GUI.Label (new Rect(Screen.width / 100, Screen.height / 13, Screen.width / 6, Screen.height / 12), "Pontuaçao: "+ score.ToString());
+		GUI.Label (new Rect(Screen.width / 100, Screen.height / 13, Screen.width / 6, Screen.height / 12), "Pontuaçao: "+ score.ToString(),customButton);
 		GUI.DrawTexture (new Rect (Screen.width / 40, Screen.height / 25, Screen.width / 8.3f/maxTemperatura*temperatura, Screen.height / 48), Temperatura);
 		GUI.DrawTexture (new Rect (Screen.width / 100, Screen.height / 100, Screen.width / 6, Screen.height / 12), Contorno);
 	}
