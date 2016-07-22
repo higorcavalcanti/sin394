@@ -8,7 +8,7 @@ public class WinnerScript2 : MonoBehaviour {
 	private OpcoesScript score;
 	// Use this for initialization
 	void Start () {
-		
+		MapaJogoScript.level = 1;
 	}
 	
 	// Update is called once per frame
