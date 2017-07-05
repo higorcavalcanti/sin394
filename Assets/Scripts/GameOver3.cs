@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOver2 : MonoBehaviour {
+public class GameOver3 : MonoBehaviour {
 
 	public Texture botaoJogar;
 	private bool set;
@@ -26,12 +26,12 @@ public class GameOver2 : MonoBehaviour {
 		
 		if (GUI.Button (new Rect (Screen.width /3.01f, Screen.height / 1.3f, Screen.width / 3.5f, Screen.height / 5.5f), botaoJogar, GUIStyle.none)) {
 			set = true;
-			Application.LoadLevel(10);
+			Application.LoadLevel(7);
 			
 		}
 
 		if (Input.GetKeyDown ("space")) {
-			Application.LoadLevel (10);
+			Application.LoadLevel(7);
 		}
 	}
 	

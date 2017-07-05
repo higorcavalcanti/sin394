@@ -9,6 +9,7 @@ public class WinnerScript2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		MapaJogoScript.level = 1;
+		Cursor.visible = true;
 	}
 	
 	// Update is called once per frame
@@ -23,6 +24,10 @@ public class WinnerScript2 : MonoBehaviour {
 		if (GUI.Button (new Rect (Screen.width /2.8f, Screen.height / 1.3f, Screen.width / 4.5f, Screen.height / 6.5f), botaoContinuar, GUIStyle.none)) {
 			set = true;
 			Application.LoadLevel(0);
+		}
+
+		if (Input.GetKeyDown ("space")) {
+			Application.LoadLevel (0);
 		}
 	}
 }
