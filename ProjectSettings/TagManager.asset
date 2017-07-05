@@ -10,6 +10,7 @@ TagManager:
   - startFase1Tag
   - enemy
   - startFase2Tag
+  - startFase3Tag
   layers:
   - Default
   - TransparentFX

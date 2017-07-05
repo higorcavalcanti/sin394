@@ -23,7 +23,11 @@ public class PlayerScript : MonoBehaviour {
 		if (MapaJogoScript.level == 2) {
 			transform.position = new Vector3(-16.0f, 4.0f, transform.position.z);
 		}
-	}
+        if (MapaJogoScript.level == 3)
+        {
+            transform.position = new Vector3(-2.7f, 4.0f, transform.position.z);
+        }
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -62,11 +66,17 @@ public class PlayerScript : MonoBehaviour {
 		//Gambiarra! Arrumar
 		if (colisor.gameObject.tag == "startFase1Tag") {
 			Application.LoadLevel (8);
-		} else if (colisor.gameObject.tag == "startFase2Tag") {
+		}
+        else if (colisor.gameObject.tag == "startFase2Tag") {
 			Application.LoadLevel (14);
 		}
+        else if (colisor.gameObject.tag == "startFase3Tag")
+        {
+            Application.LoadLevel(14);
+            //Application.LoadLevel(15);
+        }
 
-	}
+    }
 
 	IEnumerator DestroyShip(){
 		Instantiate(ExplosionPrefab,transform.position,transform.rotation);
