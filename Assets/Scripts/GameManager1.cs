@@ -106,20 +106,10 @@ public class GameManager1 : MonoBehaviour {
 			matchText.text = " Número de Jogadas: " + _matches;
 			print ("Tipo: " + MenuModel.tipos + "Nivel: " + MenuModel.subTipos);
 
-			if (MenuModel.tipos == 1) {
-				MenuModel.tipos = 1;
-				MenuModel.subTipos = 1;
-			} else if (MenuModel.tipos == 2) {
-				MenuModel.tipos = 2;
-				MenuModel.subTipos = 1;
-			} else if (MenuModel.tipos == 3) {
-				MenuModel.tipos = 3;
-				MenuModel.subTipos = 1;
-
-			}
 
 			if (_matches == 0) {
-				SceneManager.LoadScene ("Winner");
+				//SceneManager.LoadScene ("Winner");
+				Application.LoadLevel(12);
 			}
 
 		} else {

@@ -100,8 +100,8 @@ GameObject:
   m_Component:
   - component: {fileID: 865550454}
   - component: {fileID: 865550453}
-  - component: {fileID: 865550452}
   - component: {fileID: 865550451}
+  - component: {fileID: 865550452}
   m_Layer: 0
   m_Name: FundoPrincipal
   m_TagString: Untagged
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 865550450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb5a27339a47ad4e8406569ff0022e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 436d9f304d94b4cedb186645eac37677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &865550453

@@ -35,3 +35,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2Pos.unity
   - enabled: 1
     path: Assets/Scenes/PreLevel2.unity
+  - enabled: 1
+    path: Assets/Scenes/GameOver3.unity
+  - enabled: 1
+    path: Assets/Scenes/PreLevel3.unity
+  - enabled: 1
+    path: Assets/Scenes/Level3Pos.unity
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
