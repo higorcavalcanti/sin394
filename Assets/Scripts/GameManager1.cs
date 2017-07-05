@@ -35,7 +35,7 @@ public class GameManager1 : MonoBehaviour {
         if(!mostrou)
         {
             //StartCoroutine(VirarCartas(0));
-            StartCoroutine( MostrarCartas(5) );
+            StartCoroutine( MostrarCartas(2) );
 
             mostrou = true;
         }
