@@ -8,6 +8,7 @@ public class WinnerScript : MonoBehaviour {
 	private OpcoesScript score;
 	// Use this for initialization
 	void Start () {
+		Cursor.visible = true;
 	
 	}
 	
@@ -24,5 +25,10 @@ public class WinnerScript : MonoBehaviour {
 			set = true;
 			Application.LoadLevel(3);
 		}
+
+		if (Input.GetKeyDown ("space")) {
+			Application.LoadLevel (3);
+		}
 	}
+
 }
